@@ -26,53 +26,6 @@ Kalaha is a turn-based strategy game played on a board with:
 5. The game ends when one player's side is empty
 6. The player with the most seeds in their store wins
 
-## Features
-
-**Game Modes:**
-- Human vs AI
-- AI vs AI (Deterministic)
-- AI vs AI (Randomized)
-
-**AI Capabilities:**
-- MinMax algorithm implementation
-- Alpha-beta pruning
-- Move ordering optimization
-- Evaluation function with weighted strategic factors:
-  - Store accumulation
-  - Board control (seed distribution)
-  - Extra turn opportunities
-  - Capture possibilities
-
-**Benchmarking Tools:**
-- Compare different AI strategies
-- Evaluate search depth impact
-- Measure move execution time
-- Track win rates, average scores, and tactical metrics
-
-### Running the Game
-
-```bash
-python Main.py
-```
-
-Follow the prompts to:
-1. Choose a game mode (Human vs AI, AI vs AI Deterministic, or AI vs AI Randomized)
-2. If playing as human, choose which player you want to be
-3. Make moves by entering pit numbers (0-5)
-4. Type `q` to quit
-
-### Running Benchmarks
-
-```bash
-python Benchmark.py
-```
-
-This runs a comprehensive benchmark suite comparing:
-- Different search depths (3, 5, 7, 9)
-- Different evaluation functions
-- Move ordering efficiency
-- Custom AI variants
-
 ## Project Structure
 
 ```
@@ -122,6 +75,30 @@ The AI uses a recursive MinMax algorithm that:
 2. Alternates between maximizing and minimizing players
 3. Uses alpha-beta pruning to eliminate unnecessary branches
 4. Implements move ordering to improve pruning efficiency
+
+### Running the Game
+
+```bash
+python Main.py
+```
+
+Follow the prompts to:
+1. Choose a game mode (Human vs AI, AI vs AI Deterministic, or AI vs AI Randomized)
+2. If playing as human, choose which player you want to be
+3. Make moves by entering pit numbers (0-5)
+4. Type `q` to quit
+
+### Running Benchmarks
+
+```bash
+python Benchmark.py
+```
+
+This runs a comprehensive benchmark suite comparing:
+- Different search depths (3, 5, 7, 9)
+- Different evaluation functions
+- Move ordering efficiency
+- Custom AI variants
 
 ### Evaluation Function
 
@@ -181,17 +158,6 @@ Your choice: 2
 Current player: 1
 Player 1: Choose a pit (0-5): 2
 ```
-
-## Performance
-
-The AI typically responds within 1-2 seconds per move at depth 6-7, making for a responsive gameplay experience.
-
-### Benchmark Results Example:
-When comparing different search depths:
-- **Depth 3**: Fast responses, moderate play strength
-- **Depth 5**: Balanced speed and strategy
-- **Depth 7**: Strong play, slight delays (1-2 seconds)
-- **Depth 9+**: Very strong play, significant delays
 
 ## Author
 
