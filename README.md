@@ -5,10 +5,10 @@ A complete implementation of the classic **Kalaha** board game with an intellige
 ## Project Overview
 
 This project implements the traditional two-player Kalaha game (also known as Mancala) with:
-- **Human vs AI gameplay**: Play against an intelligent computer opponent
-- **AI vs AI battles**: Watch two AI opponents compete using different strategies
-- **Intelligent AI agent**: Implements MinMax search with alpha-beta pruning and strategic move ordering
-- **Benchmarking suite**: Comprehensive tools to evaluate and compare different AI strategies
+- **Human vs AI gameplay**: Play against a computer opponent
+- **AI vs AI battles**: Watch two AIs compete using different strategies
+- **AI agent**: Implements MinMax search with alpha-beta pruning and strategic move ordering
+- **Benchmarking**: Tools to evaluate and compare different AI strategies
 - **Customizable game parameters**: Adjust pit counts, seed distribution, and search depth
 
 ## Game Rules
@@ -28,14 +28,14 @@ Kalaha is a turn-based strategy game played on a board with:
 
 ## Features
 
-✨ **Game Modes:**
+**Game Modes:**
 - Human vs AI
 - AI vs AI (Deterministic)
 - AI vs AI (Randomized)
 
-🤖 **AI Capabilities:**
+**AI Capabilities:**
 - MinMax algorithm implementation
-- Alpha-beta pruning for efficiency
+- Alpha-beta pruning
 - Move ordering optimization
 - Evaluation function with weighted strategic factors:
   - Store accumulation
@@ -43,38 +43,11 @@ Kalaha is a turn-based strategy game played on a board with:
   - Extra turn opportunities
   - Capture possibilities
 
-📊 **Benchmarking Tools:**
+**Benchmarking Tools:**
 - Compare different AI strategies
 - Evaluate search depth impact
 - Measure move execution time
 - Track win rates, average scores, and tactical metrics
-
-## Installation
-
-### Prerequisites
-- Python 3.8+
-- pip (Python package manager)
-
-### Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/sathwikkannam/02180-boardgame.git
-   cd 02180-boardgame
-   ```
-
-2. **Create a virtual environment:**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
 
 ### Running the Game
 
