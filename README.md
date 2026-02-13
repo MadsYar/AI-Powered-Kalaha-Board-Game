@@ -158,11 +158,3 @@ Your choice: 2
 Current player: 1
 Player 1: Choose a pit (0-5): 2
 ```
-
-## Author
-
-Developed as a project for the course called 02180 Intro to AI at DTU for implementing game AI with MinMax algorithms.
-
-## License
-
-This project is provided as-is for educational and development purposes.
